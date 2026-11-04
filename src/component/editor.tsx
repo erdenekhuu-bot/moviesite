@@ -197,7 +197,7 @@ export default function EditorComponent() {
                     initialData: '',
                 }}
                 onChange={(event, editor) => {
-                    console.log(editor.getData());
+                    console.log(editor.getData(),event);
                 }}
             />
         </div>
