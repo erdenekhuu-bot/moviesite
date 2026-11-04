@@ -22,13 +22,10 @@ export default function App() {
           }}
         >
          
-        
         </Layout.Header>
-       
+       <EditorComponent />
         <Layout.Footer style={{ padding: 8 }}>
-         <div className="App" style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
-      <EditorComponent />
-    </div>
+           
         </Layout.Footer>
       </Layout>
     </ConfigProvider>
