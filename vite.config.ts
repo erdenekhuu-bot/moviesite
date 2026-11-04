@@ -6,4 +6,12 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: "/",
+  optimizeDeps: {
+    include: ["ckeditor5"],
+  },
+  build: {
+    commonjsOptions: {
+      include: [/ckeditor5/, /node_modules/],
+    },
+  },
 });
