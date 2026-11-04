@@ -31,6 +31,7 @@ export default function App() {
   };
 
   const selectedKey = location.pathname === "/editor" ? "editor" : "list";
+  const APP_TITLE = import.meta.env.VITE_APP_TITLE || '';
 
   useQuery({
     queryKey: ['apiData'],
@@ -59,7 +60,7 @@ export default function App() {
           }}
         >
           <div style={{ color: "#fff", fontWeight: "bold", fontSize: "18px" }}>
-            My App
+            {APP_TITLE}
           </div>
 
           <div style={{ display: "flex", alignItems: "center", gap: "16px", flex: 1, justifyContent: "flex-end" }}>
