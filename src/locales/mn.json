@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "list": "Жагсаалт",
+    "editor": "Редактор"
+  },
+  "editor": {
+    "title": "Vite + React + TypeScript + CKEditor 5",
+    "placeholder": "Vite болон TypeScript дээрх CKEditor 5-аас мэндчилж байна!"
+  },
+  "list": {
+    "title": "Нийтлэлүүдийн Жагсаалт",
+    "description": "Энд таны жагсаалт харагдах болно. Редактор руу орохын тулд доорх холбоос дээр дарна уу.",
+    "goToEditor": "CKEditor хуудас руу очих"
+  },
+  "footer": {
+    "rights": "Миний Апп Хөл ©2026"
+  }
+}
