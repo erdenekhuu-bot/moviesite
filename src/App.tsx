@@ -27,7 +27,6 @@ export default function App() {
 
     await i18n.changeLanguage(nextLang);
 
-    console.log('Current language:', i18n.language);
   };
 
   const selectedKey = location.pathname === "/editor" ? "editor" : "list";
@@ -37,7 +36,7 @@ export default function App() {
     queryKey: ['apiData'],
     queryFn: async () => {
       const response = await axios.get(`${import.meta.env.VITE_API_URL}/vercel`);
-      console.log(response.data);
+   
       return response.data;
     },
 
@@ -45,7 +44,6 @@ export default function App() {
   return (
     <ConfigProvider>
       <Layout style={{ minHeight: "100vh" }}>
-     
         <Layout.Header
           style={{
             position: "sticky",
